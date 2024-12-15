@@ -6,9 +6,9 @@ this is a good luking and responsive web side .
 ---
 
 ## 🚀 Features  
-- Feature 1: Describe a key feature.  
-- Feature 2: Mention another highlight.  
-- Feature 3: Add more as needed.  
+- Feature 1: this is good lucking and.  
+- Feature 2: responsive and use good luking animations.  
+- Feature 3: and working contect form and.  
 
 ---
 
@@ -23,4 +23,4 @@ this is a good luking and responsive web side .
 
 1. Clone the repo:  
    ```bash
-   git clone 
+   git clone https://github.com/Mohitbisen0657/Personal-Portfolio-website.2
