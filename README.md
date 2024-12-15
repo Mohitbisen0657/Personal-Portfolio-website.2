@@ -1,7 +1,7 @@
 # Project Name  
 
 ![Parsonal-protfolio-webside]
-this is a good luking and responsive web side .  
+this is a good luking and responsive portfolio web side .  
 
 ---
 
