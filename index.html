@@ -542,7 +542,9 @@
         <div class="flex flex-col md:flex-row items-center mt-10">
             <div class="w-full"> <img src="./assets/images/contact-me.svg" alt="phone" />
             </div>
-            <form class="w-full" name="contactUS" netlify>
+            <form class="w-full" name="contactUS"  method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true">
                 <label for"name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
                 <div class="relative mb-4">
                     <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
