@@ -776,6 +776,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -949,6 +953,10 @@ video {
 
 .flex-none {
   flex: none;
+}
+
+.flex-\[1_0_0px\] {
+  flex: 1 0 0px;
 }
 
 .flex-shrink-0 {
@@ -1135,6 +1143,14 @@ video {
 
 .overflow-visible {
   overflow: visible;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .rounded {
