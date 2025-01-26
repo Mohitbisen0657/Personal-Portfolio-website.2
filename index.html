@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,8 @@
     <script src="./app.js"></script>
 </head>
 
-<body class="bg-[#111] text-white font-['Nunito']">
-    <section class="flex flex-col justify-between h-screen bg-[#292d2f]">
+<body class="bg-white dark:bg-[#111] text-white font-['Nunito']">
+    <section class="flex flex-col justify-between h-screen sticky top-0 bg-[#292d2f]">
         <header
             class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
             <svg width="70" height="70" viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@
                     </svg> </a>
             </div>
         </header>
-        <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
+        <!--   <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>-->
         <div class="flex -mt-10 relative pointer-events-none">
             <div class="w-full px-4 max-w-screen-xl mx-auto">
                 <svg viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -150,20 +150,20 @@
         </div>
     </section>
     <section
-        class="flex flex-col flex-none items-center justify-start content-center bg-[#080808] rounded-tl-[20px] rounded-tr-[20px] flex-nowrap gap-[96px] h-auto overflow-hidden pt-12 sm:pt-24 px-8 sm:px-16 relative w-full will-change-transform z-2">
+        class="max-w-screen-2xl bg-white dark:bg-[#111] mx-auto flex flex-col flex-none items-center justify-start content-center rounded-tl-[20px] rounded-tr-[20px] flex-nowrap gap-[96px] h-auto overflow-hidden pt-12 sm:pt-24 px-8 sm:px-16 relative will-change-transform z-2">
         <div
             class="flex items-start content-start flex-none flex-row flex-nowrap h-min justify-between overflow-visible p-0 relative w-full">
             <div
                 class="flex items-start content-start flex-none flex-col flex-nowrap gap-0 h-min justify-start overflow-visible p-0 relative w-min">
                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                     <p
-                        class="text-[30px] sm:text-[80px] font-normal leading-[1.3em] tracking-[0em] text-start text-[#cbcbcb] decoration-none uppercase-none sm:mb-1">
+                        class="text-[30px] sm:text-[80px] font-normal leading-[1.3em] tracking-[0em] text-start text-black dark:text-[#cbcbcb] decoration-none uppercase-none sm:mb-1">
                         150<span class="text-[rgb(190,166,232)]">+</span>
                     </p>
                 </div>
                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                     <p
-                        class="text-[12px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-start text-[#CBCBCB] decoration-none capitalize-none">
+                        class="text-[12px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-start text-black dark:text-[#CBCBCB] decoration-none capitalize-none">
                         Clients</p>
                 </div>
             </div>
@@ -171,13 +171,13 @@
                 class="flex items-start content-start flex-none flex-col flex-nowrap gap-0 h-min justify-start overflow-visible p-0 relative w-min">
                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                     <p
-                        class="text-[30px] sm:text-[80px] font-normal leading-[1.3em] tracking-[0em] text-start text-[#cbcbcb] decoration-none uppercase-none sm:mb-1">
+                        class="text-[30px] sm:text-[80px] font-normal leading-[1.3em] tracking-[0em] text-start text-black dark:text-[#cbcbcb] decoration-none uppercase-none sm:mb-1">
                         200<span class="text-[rgb(190,166,232)]">+</span>
                     </p>
                 </div>
                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                     <p
-                        class="text-[12px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-start text-[#CBCBCB] decoration-none capitalize-none">
+                        class="text-[12px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-start text-black dark:text-[#CBCBCB] decoration-none capitalize-none">
                         Projects</p>
                 </div>
             </div>
@@ -185,13 +185,13 @@
                 class="flex items-start content-start flex-none flex-col flex-nowrap gap-0 h-min justify-start overflow-visible p-0 relative w-min">
                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                     <p
-                        class="text-[30px] sm:text-[80px] font-normal leading-[1.3em] tracking-[0em] text-start text-[#cbcbcb] decoration-none uppercase-none sm:mb-1">
+                        class="text-[30px] sm:text-[80px] font-normal leading-[1.3em] tracking-[0em] text-start text-black dark:text-[#cbcbcb] decoration-none uppercase-none sm:mb-1">
                         100<span class="text-[rgb(190,166,232)]">%</span>
                     </p>
                 </div>
                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                     <p
-                        class="text-[12px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-start text-[#CBCBCB] decoration-none capitalize-none">
+                        class="text-[12px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-start text-black dark:text-[#CBCBCB] decoration-none capitalize-none">
                         Client Satisfaction</p>
                 </div>
             </div>
@@ -201,7 +201,7 @@
                 class="border-b border-l-0 border-r border-t-0 border-solid border-[#1a1a1a] flex items-start content-start self-start flex-none flex-col flex-nowrap h-full justify-between overflow-visible p-4 sm:p-16 relative w-full">
                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                     <p
-                        class="text-[15px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-start text-[#cbcbcb] decoration-none uppercase-none mb-2 sm:mb-5">
+                        class="text-[15px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-start text-black dark:text-[#cbcbcb] decoration-none uppercase-none mb-2 sm:mb-5">
                         Design, for me, goes beyond solving problems. It &apos;s about improving user experiences,
                         striking the perfect balance between aesthetics and functionality, and even creating
                         products that form emotional connections with users.</p>
@@ -213,7 +213,7 @@
                 </div>
                 <div
                     class="outline-none flex flex-col justify-start flex-shrink-0 transform-none flex-none h-auto relative w-full break-words">
-                    <p class="text-[16px] sm:text-[20px] leading-[130%] text-[#cbcbcb]"
+                    <p class="text-[16px] sm:text-[20px] leading-[130%] text-black dark:text-[#cbcbcb]"
                         style="font-family: 'Homemade Apple', sans-serif;">Mohit <span class="pl-3">B.</span></p>
                 </div>
             </div>
@@ -221,7 +221,8 @@
                 <div
                     class="flex items-start self-start flex-none flex-col flex-nowrap gap-10 h-full justify-start justify-self-start overflow-visible p-6 sm:p-16 relative w-full sm:border-l-0 border-l-[1px] border-solid border-[#1a1a1a]">
                     <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
-                        <h2 class="text-[23px] font-normal leading-[1.3em] tracking-[0em] text-left text-[#cbcbcb]">
+                        <h2
+                            class="text-[23px] font-normal leading-[1.3em] tracking-[0em] text-left text-black dark:text-[#cbcbcb]">
                             My Services</h2>
                     </div>
                     <div
@@ -242,7 +243,7 @@
                             </div>
                             <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                 <h3
-                                    class="text-[16px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-left text-[#cbcbcb]">
+                                    class="text-[16px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-left text-black dark:text-[#cbcbcb]">
                                     Product Design</h3>
                             </div>
                         </div>
@@ -262,7 +263,7 @@
                             </div>
                             <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                 <h3
-                                    class=" text-[16px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-left text-[#cbcbcb]">
+                                    class=" text-[16px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-left text-black  dark:text-[#cbcbcb]">
                                     User Research</h3>
                             </div>
                         </div>
@@ -282,7 +283,7 @@
                             </div>
                             <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                 <h3
-                                    class="text-[16px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-left text-[#cbcbcb]">
+                                    class="text-[16px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-left text-black dark:text-[#cbcbcb]">
                                     Concept Development</h3>
                             </div>
                         </div>
@@ -302,7 +303,7 @@
                             </div>
                             <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                 <h3
-                                    class="text-[16px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-left text-[#cbcbcb]">
+                                    class="text-[16px] sm:text-[18px] font-normal leading-[1.3em] tracking-[0em] text-left text-black dark:text-[#cbcbcb]">
                                     User Experience Design</h3>
                             </div>
                         </div>
@@ -313,7 +314,8 @@
                 <div
                     class="flex flex-col items-start justify-start self-start gap-10 h-full w-full overflow-visible p-6 sm:p-16 relative sm:border-t-0 sm:border-l-0 border-t-[1px] border-l-[1px] border-solid border-[#1a1a1a]">
                     <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
-                        <h2 class="text-[23px] font-normal leading-[1.3em] tracking-[0em] text-left text-[#cbcbcb]">
+                        <h2
+                            class="text-[23px] font-normal leading-[1.3em] tracking-[0em] text-left text-black dark:text-[#cbcbcb]">
                             Tools I specialize in</h2>
                     </div>
                     <div
@@ -332,7 +334,7 @@
                                 </div>
                                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                     <p
-                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-[#cbcbcb] no-underline">
+                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-black dark:text-[#cbcbcb] no-underline">
                                         Figma</p>
                                 </div>
                             </div>
@@ -348,7 +350,7 @@
                                 </div>
                                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                     <p
-                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-[#cbcbcb] no-underline">
+                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-black dark:text-[#cbcbcb] no-underline">
                                         PhotoShop</p>
                                 </div>
                             </div>
@@ -364,7 +366,7 @@
                                 </div>
                                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                     <p
-                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-[#cbcbcb] no-underline">
+                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-black derk:text-[#cbcbcb] no-underline">
                                         Notion</p>
                                 </div>
                             </div>
@@ -383,7 +385,7 @@
                                 </div>
                                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                     <p
-                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-[#cbcbcb] no-underline">
+                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-black  dark:text-[#cbcbcb] no-underline">
                                         Framer</p>
                                 </div>
                             </div>
@@ -399,7 +401,7 @@
                                 </div>
                                 <div class="outline-none flex flex-col justify-start flex-shrink-0 transform-none">
                                     <p
-                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-[#cbcbcb] no-underline">
+                                        class="font-inter text-base font-normal tracking-normal leading-[1.3em] space-y-5 text-black dark:text-[#cbcbcb] no-underline">
                                         Illustrator</p>
                                 </div>
                             </div>
@@ -412,7 +414,7 @@
                 <div
                     class="flex flex-col justify-start flex-shrink-0 transform-none outline-none flex-none h-auto relative w-full break-words">
                     <h2 class=" font-normal text-[23px] leading-[1.3em] tracking-[0em] text-start
-                        text-[#cbcbcb]">Experience</h2>
+                      text-black dark:text-[#cbcbcb]">Experience</h2>
                 </div>
                 <div
                     class="flex flex-col flex-none flex-nowrap items-start justify-start content-start gap-5 h-min w-full overflow-visible p-0 relative">
@@ -420,7 +422,8 @@
                         class="flex items-center justify-between flex-none flex-row flex-nowrap h-min w-full overflow-visible p-0 relative">
                         <div
                             class="flex flex-col justify-start flex-shrink-0 outline-none transform-none flex-[1_0_0px] h-auto relative w-px break-words">
-                            <p class="font-normal text-[18px] leading-[1.3em] tracking-[0em] text-start text-[#cbcbcb]">
+                            <p
+                                class="font-normal text-[18px] leading-[1.3em] tracking-[0em] text-start text-black dark:text-[#cbcbcb]">
                                 Google</p>
                         </div>
                         <div
@@ -500,331 +503,339 @@
             </div>
         </div>
     </section>
-    <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
-        <h2 id="Letest Projects"
-            class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
-            Letest Projects
-        </h2>
-        <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative">
-            <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
-            <div
-                class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
-            </div>
-            <a href="https://friendscollectionnagpur.com" class="flex w-full relative justify-center sm:justify-start">
-                <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
-                    <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-                        src="./assets/images/frindscolloctionagpur.png" alt="" />
-                    <span
-                        class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Friendscollectionnagpur
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </span>
-                </div>
-            </a>
-
-            <div class="w-full">
-                <h3 class="text-[#459bd5] font-bold text-2xl md:text-4xl">
-                    Friends Collection Nagpur
-                </h3>
-                <span class="text-[#459bd5] text-base md:text-lg">(Clothing Brand)</span>
-                <p class="text-justify text-sm md:text-base mt-2">
-                    A clothing brand combines style and comfort to offer fashionable apparel for diverse lifestyles,
-                    focusing on quality and trendsetting designs.
-                    It reflects individuality while catering to modern fashion needs.
-                </p>
-                <ul class="flex flex-wrap gap-2 mt-2">
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #react.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #express.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #node.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #swiper.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #mongoDB
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #mongoose
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #css
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #javascript
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #figma
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
-            <div class="order-2 sm:order-1 w-full">
-                <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
-                    Whitecliff Spice
-                </h3>
-                <span class="text-[#ffe578] text-base md:text-lg">(Food Spices)</span>
-                <p class="text-justify text-sm md:text-base mt-2">
-                    Being a lead developer, revamped the site to a highly responsive,
-                    and interactive website. Created new features and pages. Worked as a
-                    team with product manager and ux designer.
-                </p>
-
-                <ul class="flex flex-wrap gap-2 mt-2">
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #react.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #express.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #node.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #swiper.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #mongoDB
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #mongoose
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #css
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #javascript
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #figma
-                    </li>
-                </ul>
-            </div>
-            <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
-            <div
-                class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
-            </div>
-            <a href="https://whitecliffspices.com/"
-                class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+    <section class="w-full relative bg-white dark:bg-[#111]">
+        <div class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+            <h2 id="Letest Projects"
+                class="text-3xl sm:text-[40px] bg-white dark:bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]">
+                Letest Projects
+            </h2>
+            <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative">
+                <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
                 <div
-                    class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
-                    <img class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-                        src="./assets/images/Group 1.png" alt="" />
-                    <span
-                        class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#ffe578] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Whitecliffspices
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </span>
+                    class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
                 </div>
-            </a>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative">
-            <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
-            <div
-                class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
-            </div>
-            <a rel="https://bandhutvafoundation.org/" class="flex w-full relative justify-center sm:justify-start">
-                <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
-                    <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-                        src="./assets/images/Group 1 (1).png" alt="" />
-                    <span
-                        class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Bandhutvafoundation
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </span>
+                <a href="https://friendscollectionnagpur.com"
+                    class="flex w-full relative justify-center sm:justify-start">
+                    <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
+                        <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                            src="./assets/images/frindscolloctionagpur.png" alt="" />
+                        <span
+                            class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Friendscollectionnagpur
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+                <div class="w-full">
+                    <h3 class="text-[#459bd5] font-bold text-2xl md:text-4xl">
+                        Friends Collection Nagpur
+                    </h3>
+                    <span class="text-[#459bd5] text-base md:text-lg">(Clothing Brand)</span>
+                    <p class="text-justify text-sm md:text-base mt-2">
+                        A clothing brand combines style and comfort to offer fashionable apparel for diverse lifestyles,
+                        focusing on quality and trendsetting designs.
+                        It reflects individuality while catering to modern fashion needs.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #react.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #express.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #node.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #swiper.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #mongoDB
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #mongoose
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #css
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #javascript
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #figma
+                        </li>
+                    </ul>
                 </div>
-            </a>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+                <div class="order-2 sm:order-1 w-full">
+                    <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
+                        Whitecliff Spice
+                    </h3>
+                    <span class="text-[#ffe578] text-base md:text-lg">(Food Spices)</span>
+                    <p class="text-justify text-sm md:text-base mt-2">
+                        Being a lead developer, revamped the site to a highly responsive,
+                        and interactive website. Created new features and pages. Worked as a
+                        team with product manager and ux designer.
+                    </p>
 
-            <div class="w-full">
-                <h3 class="text-[#459bd5] font-bold text-2xl md:text-4xl">
-                    Bandhutva Foundation
-                </h3>
-                <span class="text-[#459bd5] text-base md:text-lg">(Children's Ngo)</span>
-                <p class="text-justify text-sm md:text-base mt-2">
-                    Deeply understand advanced concepts, practice with real-world
-                    exercises, build expertise with hands-on projects to boost your
-                    career.
-                </p>
-                <ul class="flex flex-wrap gap-2 mt-2">
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #react.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #express.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #node.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #swiper.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #mongoDB
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #mongoose
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #css
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #javascript
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #figma
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
-            <div class="order-2 sm:order-1 w-full">
-                <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
-                    Varhadi Zaika
-                </h3>
-                <span class="text-[#ffe578] text-base md:text-lg">(EdTech Startup)</span>
-                <p class="text-justify text-sm md:text-base mt-2">
-                    Being a lead developer, revamped the site to a highly responsive,
-                    and interactive website. Created new features and pages. Worked as a
-                    team with product manager and ux designer.
-                </p>
-
-                <ul class="flex flex-wrap gap-2 mt-2">
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #react.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #express.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #node.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #swiper.js
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #mongoDB
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #mongoose
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #css
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #javascript
-                    </li>
-                    <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-                        #figma
-                    </li>
-                </ul>
-            </div>
-            <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
-            <div
-                class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
-            </div>
-            <a href="https://varhadizaika.com/"
-                class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #react.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #express.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #node.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #swiper.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #mongoDB
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #mongoose
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #css
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #javascript
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #figma
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
                 <div
-                    class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
-                    <img class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-                        src="./assets/images/varhadi zayka.png" alt="" />
-                    <span
-                        class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#ffe578] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Varhadizaika
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </span>
+                    class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
                 </div>
-            </a>
-        </div>
-        <div class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2">
+                <a href="https://whitecliffspices.com/"
+                    class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+                    <div
+                        class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
+                        <img class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                            src="./assets/images/Group 1.png" alt="" />
+                        <span
+                            class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#ffe578] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Whitecliffspices
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative">
+                <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+                <div
+                    class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+                </div>
+                <a rel="https://bandhutvafoundation.org/" class="flex w-full relative justify-center sm:justify-start">
+                    <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
+                        <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                            src="./assets/images/Group 1 (1).png" alt="" />
+                        <span
+                            class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Bandhutvafoundation
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+                <div class="w-full">
+                    <h3 class="text-[#459bd5] font-bold text-2xl md:text-4xl">
+                        Bandhutva Foundation
+                    </h3>
+                    <span class="text-[#459bd5] text-base md:text-lg">(Children's Ngo)</span>
+                    <p class="text-justify text-sm md:text-base mt-2">
+                        Deeply understand advanced concepts, practice with real-world
+                        exercises, build expertise with hands-on projects to boost your
+                        career.
+                    </p>
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #react.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #express.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #node.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #swiper.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #mongoDB
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #mongoose
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #css
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #javascript
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #figma
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+                <div class="order-2 sm:order-1 w-full">
+                    <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
+                        Varhadi Zaika
+                    </h3>
+                    <span class="text-[#ffe578] text-base md:text-lg">(EdTech Startup)</span>
+                    <p class="text-justify text-sm md:text-base mt-2">
+                        Being a lead developer, revamped the site to a highly responsive,
+                        and interactive website. Created new features and pages. Worked as a
+                        team with product manager and ux designer.
+                    </p>
+
+                    <ul class="flex flex-wrap gap-2 mt-2">
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #react.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #express.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #node.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #swiper.js
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #mongoDB
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #mongoose
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #css
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #javascript
+                        </li>
+                        <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                            #figma
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+                <div
+                    class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block">
+                </div>
+                <a href="https://varhadizaika.com/"
+                    class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+                    <div
+                        class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
+                        <img class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                            src="./assets/images/varhadi zayka.png" alt="" />
+                        <span
+                            class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#ffe578] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">Varhadizaika
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2">
+            </div>
         </div>
     </section>
-    <section class="max-w-screen-xl mx-auto px-4">
-        <h2
-            class="text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
-            What my clients are saying?
-        </h2>
+    <section class="w-full relative bg-white dark:bg-[#111]">
+        <div class="max-w-screen-xl relative mx-auto px-4">
+            <h2
+                class="text-3xl sm:text-[40px] bg-white dark:bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center  text-black dark:text-[#1788ae] sm:border-2 border-black-500 dark:border-[#1788ae] rounded-md">
+                What my clients are saying?
+            </h2>
 
-        <div class="bg-cover flex justify-center flex-col sm:flex-row">
-            <div class="grid md:grid-cols-3 gap-12 md:gap-6 my-16 justify-center">
-                <div
-                    class="min-h-[250px] max-w-[450px] bg-[rgba(0,0,0,0.7)] border-[3px] border-[rgba(238,238,238,0.2)] rounded-2xl p-8 lg:mx-8 cursor-pointer flex flex-col gap-4 justify-center  text-white transition-transform duration-400 ease-in-out hover:border-[#3B82F6] hover:transform hover:translate-y-[-10px] hover:scale-103 hover:shadow-[0_0_50px_#3B82F6]">
-                    <img class="w-24 sm:w-32 rounded-full border-3 border-[#3B82F6] shadow-[0_0_25px_#3B82F6]"
-                        src="assets/images/image.4.jpeg" alt="">
-                    <h2 class="text-base sm:text-2xl font-bold"> Priya Sinha
-                    </h2>
-                    <h5 class="-mt-5 text-[#459bd5] text-base ">
-                        Founder Harigurus
-                    </h5>
+            <div class="bg-cover flex justify-center flex-col sm:flex-row">
+                <div class="grid md:grid-cols-3 gap-12 md:gap-6 my-16 justify-center">
+                    <div
+                        class="min-h-[250px] max-w-[450px] bg-white dark:bg-[rgba(0,0,0,0.7)] border-[3px] border-black dark:border-[rgba(238,238,238,0.2)] rounded-2xl p-8 lg:mx-8 cursor-pointer flex flex-col gap-4 justify-center  text-white transition-transform duration-400 ease-in-out hover:border-black dark:hover:border-[#3B82F6] hover:transform hover:translate-y-[-10px] hover:scale-103 hover:shadow-[0_0_50px_#3B82F6]">
+                        <img class="w-24 sm:w-32 rounded-full border-3 border-black  dark:border-[#3B82F6] shadow-[0_0_25px_#3B82F6]"
+                            src="assets/images/image.4.jpeg" alt="">
+                        <h2 class="text-base sm:text-2xl text-black dark:text-white font-bold"> Priya Sinha
+                        </h2>
+                        <h5 class="-mt-5 text-black dark:text-[#459bd5] text-base ">
+                            Founder Harigurus
+                        </h5>
 
-                    <p class="text-xs">
-                        "I was impressed by the professionalism and creativity displayed in the projects. The websites
-                        are not only visually appealing but also perform seamlessly on all devices. Perfect for
-                        businesses targeting Indian users."
-                    </p>
-                </div>
-                <div
-                    class="min-h-[250px] max-w-[450px] bg-[rgba(0,0,0,0.7)] border-[3px] border-[rgba(238,238,238,0.2)] rounded-2xl p-8 lg:mx-8 cursor-pointer flex flex-col gap-4 justify-center text-white transition-transform duration-400 ease-in-out hover:border-[#3B82F6] hover:transform hover:translate-y-[-10px] hover:scale-103 hover:shadow-[0_0_50px_#3B82F6]">
-                    <img class="w-24 sm:w-32 rounded-full border-3 border-[#3B82F6] shadow-[0_0_25px_#3B82F6]"
-                        src="assets/images/image.5.jpeg" alt="">
-                    <h2 class="text-base sm:text-2xl font-bold">Sneha Gupta</h2>
-                    <h5 class="-mt-5 text-[#459bd5] text-base ">
-                        Founder Harigurus
-                    </h5>
+                        <p class="text-black dark:text-white text-xs">
+                            "I was impressed by the professionalism and creativity displayed in the projects. The
+                            websites
+                            are not only visually appealing but also perform seamlessly on all devices. Perfect for
+                            businesses targeting Indian users."
+                        </p>
+                    </div>
+                    <div
+                        class="min-h-[250px] max-w-[450px] bg-white dark:bg-[rgba(0,0,0,0.7)] border-[3px] border-black dark:border-[rgba(238,238,238,0.2)] rounded-2xl p-8 lg:mx-8 cursor-pointer flex flex-col gap-4 justify-center text-white transition-transform duration-400 ease-in-out hover:border-black dark:hover:border-[#3B82F6] hover:transform hover:translate-y-[-10px] hover:scale-103 hover:shadow-[0_0_50px_#3B82F6]">
+                        <img class="w-24 sm:w-32 rounded-full border-3 border-black dark:border-[#3B82F6] shadow-[0_0_25px_#3B82F6]"
+                            src="assets/images/image.5.jpeg" alt="">
+                        <h2 class="text-base text-black dark:text-white sm:text-2xl font-bold">Sneha Gupta</h2>
+                        <h5 class="-mt-5 text-black dark:text-[#459bd5] text-base ">
+                            Founder Harigurus
+                        </h5>
 
-                    <p class="text-xs">
-                        "This portfolio showcases incredible web development skills. The designs are modern,
-                        user-friendly, and cater perfectly to Indian audiences. Highly recommended for anyone looking
-                        for a reliable and talented developer!"
-                    </p>
-                </div>
-                <div
-                    class="min-h-[250px] max-w-[450px] bg-[rgba(0,0,0,0.7)] border-[3px] border-[rgba(238,238,238,0.2)] rounded-2xl p-8  lg:mx-8 cursor-pointer flex flex-col gap-4 justify-center text-white transition-transform duration-400 ease-in-out hover:border-[#3B82F6] hover:transform hover:translate-y-[-10px] hover:scale-103 hover:shadow-[0_0_50px_#3B82F6]">
-                    <img class="w-24 sm:w-32 rounded-full border-3 border-[#3B82F6] shadow-[0_0_25px_#3B82F6]"
-                        src="assets/images/image.6.jpeg" alt="">
-                    <h2 class="text-base sm:text-2xl font-bold">kritika Kumari</h2>
-                    <h5 class="-mt-5 text-[#459bd5] text-base ">
-                        Founder Harigurus
-                    </h5>
-                    <p class="text-xs">
-                        "A fantastic experience working with this developer! Their ability to turn ideas into responsive
-                        and functional websites is unmatched. The attention to detail and understanding of Indian user
-                        preferences is commendable."
-                    </p>
+                        <p class="text-black dark:text-white text-xs">
+                            "This portfolio showcases incredible web development skills. The designs are modern,
+                            user-friendly, and cater perfectly to Indian audiences. Highly recommended for anyone
+                            looking
+                            for a reliable and talented developer!"
+                        </p>
+                    </div>
+                    <div
+                        class="min-h-[250px] max-w-[450px] bg-white dark:bg-[rgba(0,0,0,0.7)] border-[3px] border-black dark:border-[rgba(238,238,238,0.2)] rounded-2xl p-8  lg:mx-8 cursor-pointer flex flex-col gap-4 justify-center text-white transition-transform duration-400 ease-in-out hover:border-black dark:hover:border-[#3B82F6] hover:transform hover:translate-y-[-10px] hover:scale-103 hover:shadow-[0_0_50px_#3B82F6]">
+                        <img class="w-24 sm:w-32 rounded-full border-3 border-black dark:border-[#3B82F6] shadow-[0_0_25px_#3B82F6]"
+                            src="assets/images/image.6.jpeg" alt="">
+                        <h2 class="text-base sm:text-2xl font-bold text-black dark:text-white">kritika Kumari</h2>
+                        <h5 class="-mt-5 text-black dark:text-[#459bd5] text-base ">
+                            Founder Harigurus
+                        </h5>
+                        <p class="text-xs text-black dark:text-white">
+                            "A fantastic experience working with this developer! Their ability to turn ideas into
+                            responsive
+                            and functional websites is unmatched. The attention to detail and understanding of Indian
+                            user
+                            preferences is commendable."
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-
     </section>
-    <section class="max-w-screen-xl mx-auto px-4 pb-12">
+    <section class="w-full relative bg-white dark:bg-[#111]">
+        <div class="max-w-screen-xl relative mx-auto px-4 pb-12">
         <h2
-            class="text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+            class="text-3xl sm:text-[40px] bg-white dark:bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
             let's connect
         </h2>
         <div class="flex flex-col md:flex-row items-center mt-10">
@@ -883,9 +894,11 @@
                     Send</button>
             </form>
         </div>
+    </div>
     </section>
-    <footer class="flex flex-col items-center pb-10">
-        <p class="text-xs text-gray-300">Mohit Bisen © 2024</p>
+    <footer class="w-full relative bg-white dark:bg-[#111]">
+        <div class="flex flex-col items-center pb-10 relative">
+        <p class="text-xs text-black dark:text-gray-300">Mohit Bisen © 2024</p>
         <div class="black-logo my-4">
             <svg width="50" height="50" viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -955,6 +968,7 @@
                     </svg></a>
             </li>
         </ul>
+    </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
