@@ -1787,6 +1787,12 @@
   .bg-\[\#459bd5\] {
     background-color: #459bd5;
   }
+  .bg-\[\#b3956a\] {
+    background-color: #b3956a;
+  }
+  .bg-\[\#ba475b\] {
+    background-color: #ba475b;
+  }
   .bg-\[\#ffe578\] {
     background-color: #ffe578;
   }
@@ -2148,6 +2154,9 @@
   .text-\[16px\] {
     font-size: 16px;
   }
+  .text-\[17px\] {
+    font-size: 17px;
+  }
   .text-\[18px\] {
     font-size: 18px;
   }
@@ -2263,11 +2272,26 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
+  .text-\[\#3c485b\] {
+    color: #3c485b;
+  }
+  .text-\[\#5b2a20\] {
+    color: #5b2a20;
+  }
   .text-\[\#459bd5\] {
     color: #459bd5;
   }
   .text-\[\#b0b2c3\] {
     color: #b0b2c3;
+  }
+  .text-\[\#b3956a\] {
+    color: #b3956a;
+  }
+  .text-\[\#ba475b\] {
+    color: #ba475b;
+  }
+  .text-\[\#f1af54\] {
+    color: #f1af54;
   }
   .text-\[\#ffe578\] {
     color: #ffe578;
