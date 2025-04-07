@@ -2163,9 +2163,6 @@
   .text-\[17px\] {
     font-size: 17px;
   }
-  .text-\[18px\] {
-    font-size: 18px;
-  }
   .text-\[30px\] {
     font-size: 30px;
   }
@@ -2278,12 +2275,6 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
-  .text-\[\#3c485b\] {
-    color: #3c485b;
-  }
-  .text-\[\#5b2a20\] {
-    color: #5b2a20;
-  }
   .text-\[\#459bd5\] {
     color: #459bd5;
   }
@@ -2295,9 +2286,6 @@
   }
   .text-\[\#ba475b\] {
     color: #ba475b;
-  }
-  .text-\[\#f1af54\] {
-    color: #f1af54;
   }
   .text-\[\#ffe578\] {
     color: #ffe578;
